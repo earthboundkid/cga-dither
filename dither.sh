@@ -14,7 +14,6 @@ OUT="${IN%.*}.cga.png"
 magick "$IN" \
 	-resize x200 \
 	-define dither:diffusion-amount="$AMOUNT"% \
-	-define dither:diffusion-level=8,8,8,8,8,8 \
 	-dither FloydSteinberg \
 	-remap cga-palette.png \
 	-filter Point \
