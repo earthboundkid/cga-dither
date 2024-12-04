@@ -12,7 +12,7 @@ AMOUNT="${2:-50}"
 OUT="${IN%.*}.cga.png"
 
 magick "$IN" \
-	-resize x200 \
+	-resize x160 \
 	-define dither:diffusion-amount="$AMOUNT"% \
 	-dither FloydSteinberg \
 	-remap cga-palette.png \
